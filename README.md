@@ -85,5 +85,22 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
   # Dynamic Routes
 
-  `getStaticPaths` get route id
-    
+  `getStaticPaths` get route path
+  `getStaticProps` get content by id 
+
+  Statically Generates /posts/a/b/c
+
+  ```
+  //getStaticPaths
+  ...
+        return [
+        {
+            params: {
+            // Statically Generates /posts/a/b/c
+            id: ['a', 'b', 'c']
+            }
+        }
+        //...
+        ]
+  ```
+
