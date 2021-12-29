@@ -104,3 +104,20 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
         ]
   ```
 
+  # API Routes
+
+  `pages/api/hello.js`
+
+  ```
+    export default function handler(req, res) {
+    res.status(200).json({ text: "Hello" });
+    }
+
+  ```
+
+  > http://localhost:3001/api/hello  you will get `{text:'Hello'}`
+
+
+  - Preview Mode  
+
+    `CMS` ??? 
